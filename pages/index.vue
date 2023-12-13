@@ -13,10 +13,18 @@
     <Trend color="green" title="Investments" :amount="4000" :last-amount="3000" :loading="false" />
     <Trend color="red" title="Savings" :amount="4000" :last-amount="4100" :loading="false" />
   </section>
+
+  <section>
+    <Transaction />
+    <Transaction />
+    <Transaction />
+    <Transaction />
+  </section>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+import Transaction from '~/components/transaction.vue';
 import { transactionViewOptions } from '~/constants';
 
 
